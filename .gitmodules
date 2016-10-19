@@ -1,0 +1,6 @@
+[submodule "llvm-prof"]
+	path = llvm-prof
+	url = https://github.com/HaoMengHIT/llvm-prof.git
+[submodule "llvm-pred"]
+	path = llvm-pred
+	url = https://github.com/HaoMengHIT/llvm-pred.git
