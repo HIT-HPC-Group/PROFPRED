@@ -84,9 +84,9 @@ Use ``LLVM_RECOMMAND_VERSION`` to change llvm version directly
     $ mpif90 instrumented_program.o -o instrumented_program `pkg-config llvm-prof --variable=profile_rt_lib`
 	```
 
-2.	Execute  the instrumented mpi program to collect execution time of each communication operation
+2.	Execute  the instrumented mpi program to collect execution time of each communication operation of rank 0
 	```bash
-	mpirun -np <num> ./instrumented_program 
+    MASTER_RANK=0 mpirun -np <num> ./instrumented_program 
 	```
 
 3.	Get the results from profiles
