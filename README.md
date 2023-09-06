@@ -1,7 +1,6 @@
 PROFPRED
 =============
-
-PROFPRED is a LLVM-based performance prediction framework for predicting computation and communication performance separately on small-scale prototypes of target systems. 
+This is a LLVM-based performance prediction framework for predicting computation and communication performance separately on small-scale prototypes of target systems. 
 
 ## Build
 
