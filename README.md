@@ -2,8 +2,6 @@
 
 PROFPRED is a LLVM-based performance prediction framework for predicting computation and communication performance separately on small-scale prototypes of target systems. 
 
-For computation prediction, it first predicts the total number of executed IR instructions by constructing a serial prediction program. Then it calculate the processing rate of IR instructions on the target parallel system by constructing a serial test program. Both processes are based on pruning technique which can convert a MPI program into corresponding serial program. For communication prediction, it model each communication operation of parallel programs based on regression-based method and use these models to achieve the prediction on small-scale prototype of target systems. Combining results of two parts can get the final prediction.
-
 ## Build
 
 1.  run git submodule init; git submodule update 
@@ -27,7 +25,9 @@ Use ``LLVM_RECOMMAND_VERSION`` to change llvm version directly
 	```
 
 ## Description
+PROFPRED is a LLVM-based performance prediction framework for predicting computation and communication performance separately on small-scale prototypes of target systems. 
 
+For computation prediction, it first predicts the total number of executed IR instructions by constructing a serial prediction program. Then it calculate the processing rate of IR instructions on the target parallel system by constructing a serial test program. Both processes are based on pruning technique which can convert a MPI program into corresponding serial program. For communication prediction, it model each communication operation of parallel programs based on regression-based method and use these models to achieve the prediction on small-scale prototype of target systems. Combining results of two parts can get the final prediction.
 ### Computation Prediction
 
 1.	Convert the source code of given parallel program into corresponding LLVM IR
